@@ -24,4 +24,6 @@ whatsappRoutes.delete(
   WhatsAppController.remove
 );
 
+whatsappRoutes.get("/whatsapp/:whatsappId/profile-pic", isAuth, WhatsAppController.getProfilePic);
+
 export default whatsappRoutes;
